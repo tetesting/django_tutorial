@@ -7,8 +7,6 @@ from polls.models import Poll
 
 
 class IndexView(generic.ListView):
-    template_name = 'polls/index.html'
-    context_object_name = 'latest_poll_list'
 
     def get_queryset(self):
         """"Return the last five published polls."""
@@ -17,7 +15,6 @@ class IndexView(generic.ListView):
 
 class DetailView(generic.DetailView):
     model = Poll
-    template_name = 'polls/detail.html'
 
 
 class ResultsView(generic.DetailView):

@@ -1,6 +1,6 @@
-{% if latest_poll_list %}
+{% if poll_list %}
     <ul>
-    {% for poll in latest_poll_list %}
+    {% for poll in poll_list %}
         <li><a href="{% url 'polls:detail' poll.id %}">{{ poll.question }}</a></li>
     {% endfor %}
     </ul>
