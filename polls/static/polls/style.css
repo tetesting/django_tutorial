@@ -4,3 +4,6 @@ li a {
     color: green;
 }
 
+body {
+    background: white url("images/hdr_logo.b19c5e60269d.gif") no-repeat right bottom;
+}
